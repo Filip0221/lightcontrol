@@ -1,3 +1,11 @@
+//
+//  File.swift
+//  LightingControl
+//
+//  Created by Filip Skup on 05/11/2025.
+//
+
+
 // MARK: - Helper Functions
     
     /// Wysyła prosty GET request (np. /on1, /off1)

@@ -6,14 +6,51 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D59AD4BA2EBBAFEE00F48188 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59AD4B72EBBAE7200F48188 /* NetworkManager.swift */; };
+		D59AD4BB2EBBAFEE00F48188 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59AD4B72EBBAE7200F48188 /* NetworkManager.swift */; };
+		D5F712B02EBB91ED00E3A63B /* LightingControlWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D5F712A62EBB91EB00E3A63B /* LightingControlWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5F712AE2EBB91ED00E3A63B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5F7128C2EBB8F9C00E3A63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5F712A52EBB91EB00E3A63B;
+			remoteInfo = "LightingControlWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5F712B42EBB91ED00E3A63B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D5F712B02EBB91ED00E3A63B /* LightingControlWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D59AD4B72EBBAE7200F48188 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Shared/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
 		D5F712942EBB8F9C00E3A63B /* LightingControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightingControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F712A62EBB91EB00E3A63B /* LightingControlWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LightingControlWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D5F712962EBB8F9C00E3A63B /* LightingControl */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = LightingControl;
+			sourceTree = "<group>";
+		};
+		D5F712A72EBB91EB00E3A63B /* LightingControlWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "LightingControlWatch Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +63,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5F712A32EBB91EB00E3A63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D59AD4B62EBBAE5100F48188 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D59AD4B72EBBAE7200F48188 /* NetworkManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		D5F7128B2EBB8F9C00E3A63B = {
 			isa = PBXGroup;
 			children = (
+				D59AD4B62EBBAE5100F48188 /* Shared */,
 				D5F712962EBB8F9C00E3A63B /* LightingControl */,
+				D5F712A72EBB91EB00E3A63B /* LightingControlWatch Watch App */,
 				D5F712952EBB8F9C00E3A63B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				D5F712942EBB8F9C00E3A63B /* LightingControl.app */,
+				D5F712A62EBB91EB00E3A63B /* LightingControlWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +110,12 @@
 				D5F712902EBB8F9C00E3A63B /* Sources */,
 				D5F712912EBB8F9C00E3A63B /* Frameworks */,
 				D5F712922EBB8F9C00E3A63B /* Resources */,
+				D5F712B42EBB91ED00E3A63B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D5F712AF2EBB91ED00E3A63B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D5F712962EBB8F9C00E3A63B /* LightingControl */,
@@ -68,6 +125,28 @@
 			);
 			productName = LightingControl;
 			productReference = D5F712942EBB8F9C00E3A63B /* LightingControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5F712A52EBB91EB00E3A63B /* LightingControlWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F712B12EBB91ED00E3A63B /* Build configuration list for PBXNativeTarget "LightingControlWatch Watch App" */;
+			buildPhases = (
+				D5F712A22EBB91EB00E3A63B /* Sources */,
+				D5F712A32EBB91EB00E3A63B /* Frameworks */,
+				D5F712A42EBB91EB00E3A63B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D5F712A72EBB91EB00E3A63B /* LightingControlWatch Watch App */,
+			);
+			name = "LightingControlWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "LightingControlWatch Watch App";
+			productReference = D5F712A62EBB91EB00E3A63B /* LightingControlWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +160,9 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					D5F712932EBB8F9C00E3A63B = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					D5F712A52EBB91EB00E3A63B = {
 						CreatedOnToolsVersion = 26.1;
 					};
 				};
@@ -100,12 +182,20 @@
 			projectRoot = "";
 			targets = (
 				D5F712932EBB8F9C00E3A63B /* LightingControl */,
+				D5F712A52EBB91EB00E3A63B /* LightingControlWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D5F712922EBB8F9C00E3A63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F712A42EBB91EB00E3A63B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,10 +209,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59AD4BA2EBBAFEE00F48188 /* NetworkManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F712A22EBB91EB00E3A63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59AD4BB2EBBAFEE00F48188 /* NetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5F712AF2EBB91ED00E3A63B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5F712A52EBB91EB00E3A63B /* LightingControlWatch Watch App */;
+			targetProxy = D5F712AE2EBB91ED00E3A63B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D5F7129D2EBB8F9D00E3A63B /* Debug */ = {
@@ -256,11 +363,14 @@
 				DEVELOPMENT_TEAM = 5G2JJGKDVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LightingControl;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -269,12 +379,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FSTech.LightingControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -288,11 +402,14 @@
 				DEVELOPMENT_TEAM = 5G2JJGKDVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LightingControl;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,12 +418,82 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FSTech.LightingControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D5F712B22EBB91ED00E3A63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G2JJGKDVY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LightingControlWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = FSTech.LightingControl;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FSTech.LightingControl.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		D5F712B32EBB91ED00E3A63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G2JJGKDVY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LightingControlWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = FSTech.LightingControl;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FSTech.LightingControl.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -327,6 +514,15 @@
 			buildConfigurations = (
 				D5F712A02EBB8F9D00E3A63B /* Debug */,
 				D5F712A12EBB8F9D00E3A63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F712B12EBB91ED00E3A63B /* Build configuration list for PBXNativeTarget "LightingControlWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F712B22EBB91ED00E3A63B /* Debug */,
+				D5F712B32EBB91ED00E3A63B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
